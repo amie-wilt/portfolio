@@ -18,10 +18,14 @@ module.exports = function (grunt) {
       useminPrepare: 'grunt-usemin'
   });
 
+  grunt.loadNpmTasks('assemble');
+
   // Configurable paths
   var config = {
     app: 'app',
-    dist: 'dist'
+    dist: 'dist',
+    templates: 'app/templates',
+    support: 'support'
   };
 
   // Define the configuration for all the tasks
@@ -54,6 +58,10 @@ module.exports = function (grunt) {
       styles: {
         files: ['<%= config.app %>/styles/{,*/}*.css'],
         tasks: ['newer:copy:styles', 'postcss']
+      },
+      assemble: {
+        files: ['<%= config.templates %>/**/*'],
+        tasks: ['assemble']
       }
     },
 
@@ -98,6 +106,26 @@ module.exports = function (grunt) {
           background: false,
           server: '<%= config.dist %>'
         }
+      }
+    },
+
+    assemble: {
+      options: {
+        partials: ['<%= config.templates %>/partials/*.hbs'],
+        layout: ['<%= config.templates %>/layouts/base.hbs'],
+        data: ['<%= config.templates %>/data/*.{json,yml}'],
+        helpers: ['<%= config.support %>/helpers/gdz-helpers.js']
+      },
+      site: {
+        files: [
+          {
+            expand: true,
+            cwd: '<%= config.templates %>/pages/',
+            src: ['*.hbs'],
+            dest: '.tmp'
+          }
+        ]
+
       }
     },
 
