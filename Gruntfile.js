@@ -113,8 +113,7 @@ module.exports = function (grunt) {
       options: {
         partials: ['<%= config.templates %>/partials/*.hbs'],
         layout: ['<%= config.templates %>/layouts/base.hbs'],
-        data: ['<%= config.templates %>/data/*.{json,yml}'],
-        helpers: ['<%= config.support %>/helpers/gdz-helpers.js']
+        data: ['<%= config.templates %>/data/*.{json,yml}']
       },
       site: {
         files: [
@@ -240,12 +239,14 @@ module.exports = function (grunt) {
     // Automatically inject Bower components into the HTML file
     wiredep: {
       app: {
-        src: ['<%= config.app %>/index.html'],
-        ignorePath: /^(\.\.\/)*\.\./
+        exclude: [
+          'bower_components/modernizr/modernizr.js'
+        ],
+        ignorePath: '../../',
+        src: ['<%= config.templates %>/layouts/base.hbs']
       },
       sass: {
-        src: ['<%= config.app %>/styles/{,*/}*.{scss,sass}'],
-        ignorePath: /^(\.\.\/)+/
+        src: ['<%= config.app %>/styles/{,*/}*.{scss,sass}']
       }
     },
 
