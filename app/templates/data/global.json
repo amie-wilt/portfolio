@@ -1,0 +1,14 @@
+{
+  "pages": {
+    "index": {
+      "name": "home",
+      "image": "images/white-sands-backtuck.jpg"
+    },
+    "about": {
+      "name": "about"
+    },
+    "work": {
+      "name": "work"
+    }
+  }
+}
