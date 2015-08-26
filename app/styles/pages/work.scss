@@ -13,8 +13,28 @@
   justify-content: space-around;
 }
 
+.greer-dailey-content,
+.shopper-content,
+.moomill-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  border-radius: 5px;
+}
+
 .greer-dailey-image,
 .shopper-image,
 .moomill-image {
-  max-width: 500px;
+  max-width: 400px;
+}
+
+.image-wrapper {
+  margin-bottom: 20px;
+}
+
+.greer-dailey-heading,
+.shopper-heading,
+.moomill-heading {
+  font-size: 3vh;
+  text-align: center;
+  color: #fff;
 }
