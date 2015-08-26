@@ -7,3 +7,14 @@
   @include red-white-block-text;
   display: inline-block;
 }
+
+.work-content-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.greer-dailey-image,
+.shopper-image,
+.moomill-image {
+  max-width: 500px;
+}
