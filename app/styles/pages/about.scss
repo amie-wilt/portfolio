@@ -13,20 +13,18 @@
 }
 
 .about-description-wrapper {
-  display: table;
-  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   height: $vertical-align-height;
 }
 
 .about-description {
-  display: table-cell;
-  vertical-align: middle;
-
   p {
+    text-align: center;
     max-width: 900px;
     color: #fff;
     font-size: 1.5em;
-    text-align: right;
     line-height: 1.5;
     font-weight: 100;
     margin-left: auto;

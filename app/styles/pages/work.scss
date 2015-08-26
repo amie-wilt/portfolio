@@ -11,6 +11,8 @@
 .work-content-wrapper {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  height: $vertical-align-height;
 }
 
 .greer-dailey-content,

@@ -9,16 +9,16 @@
 }
 
 .resume-description-wrapper {
-  display: table;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: $vertical-align-height;
 }
 
 .resume-description {
-  display: table-cell;
   vertical-align: middle;
   font-size: 5em;
-  text-align: center;
   color: #fff;
 
   a {
