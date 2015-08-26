@@ -1,0 +1,29 @@
+.about-section {
+  padding-top: 100vh;
+}
+
+.about-wrapper {
+  background-color: $light-grey;
+  min-height: $section-height;
+}
+
+.about-heading {
+  @include red-white-block-text;
+  display: inline-block;
+}
+
+.about-description-wrapper {
+  display: table;
+  width: 100%;
+}
+
+.about-description {
+  display: table-cell;
+  max-width: 600px;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1.5em;
+  text-align: right;
+  line-height: 1.5;
+  font-weight: 100;
+}

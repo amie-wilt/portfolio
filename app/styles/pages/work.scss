@@ -1,0 +1,9 @@
+.work-wrapper {
+  min-height: $section-height;
+  background-color: $very-light-grey;
+}
+
+.work-heading {
+  @include red-white-block-text;
+  display: inline-block;
+}

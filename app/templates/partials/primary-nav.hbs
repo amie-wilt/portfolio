@@ -1,18 +1,13 @@
 <nav class="primary-nav">
-  <ul class="primary-nav-list">
-      <li>
-          <a href="#">About</a>
-      </li>
-      <li>
-          <a href="#">Work</a>
-      </li>
-      <li>
-          <a href="http://codepen.io/awilt/pen/JdKVyE" target="_blank">Resume</a>
-      </li>
-      <li>
-          <a href="#">Contact</a>
-      </li>
-  </ul>
+    <ul class="primary-nav-list">
+      {{#each global.pages }}
+        {{#if name }}
+            <li>
+                <a href="#{{ @key }}">{{ name }}</a>
+            </li>
+        {{/if}}
+      {{/each}}
+    </ul>
 </nav>
 
-{{! this is a handlebars comment}}
+

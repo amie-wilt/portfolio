@@ -111,7 +111,7 @@ module.exports = function (grunt) {
 
     assemble: {
       options: {
-        partials: ['<%= config.templates %>/partials/*.hbs'],
+        partials: ['<%= config.templates %>/partials/*.hbs', '<%= config.templates %>/pages/*hbs'],
         layout: ['<%= config.templates %>/layouts/base.hbs'],
         data: ['<%= config.templates %>/data/*.{json,yml}']
       },
@@ -124,7 +124,6 @@ module.exports = function (grunt) {
             dest: '.tmp'
           }
         ]
-
       }
     },
 
@@ -332,31 +331,31 @@ module.exports = function (grunt) {
       }
     },
 
-    // By default, your `index.html`'s <!-- Usemin block --> will take care
-    // of minification. These next options are pre-configured if you do not
-    // wish to use the Usemin blocks.
-    // cssmin: {
-    //   dist: {
-    //     files: {
-    //       '<%= config.dist %>/styles/main.css': [
-    //         '.tmp/styles/{,*/}*.css',
-    //         '<%= config.app %>/styles/{,*/}*.css'
-    //       ]
-    //     }
-    //   }
-    // },
-    // uglify: {
-    //   dist: {
-    //     files: {
-    //       '<%= config.dist %>/scripts/scripts.js': [
-    //         '<%= config.dist %>/scripts/scripts.js'
-    //       ]
-    //     }
-    //   }
-    // },
-    // concat: {
-    //   dist: {}
-    // },
+     //By default, your `index.html`'s <!-- Usemin block --> will take care
+     //of minification. These next options are pre-configured if you do not
+     //wish to use the Usemin blocks.
+     cssmin: {
+       dist: {
+         files: {
+           '<%= config.dist %>/styles/main.css': [
+             '.tmp/styles/{,*/}*.css',
+             '<%= config.app %>/styles/{,*/}*.css'
+           ]
+         }
+       }
+     },
+     uglify: {
+       dist: {
+         files: {
+           '<%= config.dist %>/scripts/scripts.js': [
+             '<%= config.dist %>/scripts/scripts.js'
+           ]
+         }
+       }
+     },
+     concat: {
+       dist: {}
+     },
 
     // Copies remaining files to places other tasks can use
     copy: {
@@ -372,7 +371,24 @@ module.exports = function (grunt) {
             '{,*/}*.html',
             'styles/fonts/{,*/}*.*'
           ]
-        }]
+        },
+          {
+            expand: true,
+            cwd: '.tmp',
+            src: '{,*/}*.html',
+            dest: '<%= config.dist %>'
+          }
+        ]
+      },
+      styles: {
+        expand: true,
+        dot: true,
+        cwd: '<%= config.app %>/styles',
+        dest: '.tmp/styles/',
+        src: [
+          '{,*/}*.css',
+          'fonts/{,*/}*.*'
+        ]
       }
     },
 
@@ -421,6 +437,7 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'wiredep',
+      'assemble',
       'concurrent:server',
       'postcss',
       'browserSync:livereload',
@@ -451,6 +468,7 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'wiredep',
+    'assemble',
     'useminPrepare',
     'concurrent:dist',
     'postcss',

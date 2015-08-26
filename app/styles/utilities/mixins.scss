@@ -1,0 +1,19 @@
+%visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+@mixin red-white-block-text {
+  //background: linear-gradient(to right, $red, $light-red);
+  background-color: $transparent-red;
+  color: #fff;
+  padding: 25px 100px;
+  margin: 20px 0;
+  font-size: 3em;
+}

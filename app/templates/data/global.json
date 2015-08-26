@@ -1,14 +1,21 @@
 {
   "pages": {
     "index": {
-      "name": "home",
-      "image": "images/white-sands-backtuck.jpg"
+      "image": "images/white-sands-tuck-wash.jpg"
     },
     "about": {
-      "name": "about"
+      "name": "About",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet egestas lacus, quis bibendum orci. Phasellus scelerisque, ante ac maximus fringilla, leo lorem convallis nibh, dictum sagittis risus metus a ipsum. Donec id mi et urna tincidunt mollis in ac sem. Nunc metus turpis, dapibus eget mollis eu, dapibus nec lacus. Nunc et eros efficitur felis maximus egestas. Vivamus fringilla in lorem et vehicula. Fusce at sem sed metus consequat interdum. Etiam non justo nec elit laoreet venenatis. Mauris rutrum nibh efficitur consequat lobortis. Phasellus bibendum lacus vel ante dapibus eleifend."
     },
     "work": {
-      "name": "work"
+      "name": "Work"
+    },
+    "resume": {
+      "name": "Resume",
+      "description": "Please see my <a href=\"http://codepen.io/awilt/pen/JdKVyE\" target=\"_blank\">resume on Codepen</a>."
+    },
+    "contact": {
+      "name": "Contact"
     }
   }
 }

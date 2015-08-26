@@ -1,0 +1,13 @@
+.primary-nav-list {
+  list-style: none;
+  text-align: right;
+
+  a {
+    @include red-white-block-text;
+    display: inline-block;
+  }
+}
+
+.mobile-menu-trigger {
+  @extend %visuallyhidden;
+}

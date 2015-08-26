@@ -1,0 +1,27 @@
+.resume-wrapper {
+  min-height: $section-height;
+  background-color: $light-grey;
+}
+
+.resume-heading {
+  @include red-white-block-text;
+  display: inline-block;
+}
+
+.resume-description-wrapper {
+  display: table;
+  width: 100%;
+  min-height: 50vh;
+}
+
+.resume-description {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 5em;
+  text-align: center;
+  color: #fff;
+
+  a {
+    color: $red;
+  }
+}

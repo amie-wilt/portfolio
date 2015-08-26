@@ -1,5 +1,12 @@
-{{#with global.pages }}
-  <div class="index-page" style="background-image: url({{ image }});">
-    <p>heysljkdklj;fklj</p>
-  </div>
-{{/with}}
+{{#each global.pages }}
+    <div class="{{ @key }}-section" id="{{ @key }}" {{#if image }}style="background-image: url({{ image }});"{{/if}}>
+        <div class="{{ @key }}-wrapper">
+            <h1 class="{{ @key }}-heading">{{ name }}</h1>
+            <div class="{{ @key }}-description-wrapper">
+                <div class="{{ @key }}-description">{{{ description }}}</div>
+            </div>
+        </div>
+    </div>
+{{/each}}
+
+

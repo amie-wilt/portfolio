@@ -1,9 +1,25 @@
 // bower:scss
+@import "../../bower_components/meyer-reset/stylesheets/meyer-reset";
 // endbower
+
+//Variables
+@import "variables/color-variables";
+@import "variables/structure-variables";
+
+//Utilities
+@import "utilities/mixins";
 
 // Global
 @import "global/base";
 
+//Components
+@import "components/header";
+@import "components/primary-nav";
+
 // Pages
 @import "pages/index";
+@import "pages/about";
+@import "pages/work";
+@import "pages/contact";
+@import "pages/resume";
 
