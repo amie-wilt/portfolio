@@ -2,9 +2,21 @@
     <div class="{{ @key }}-section" id="{{ @key }}" {{#if image }}style="background-image: url({{ image }});"{{/if}}>
         <div class="{{ @key }}-wrapper">
             <h1 class="{{ @key }}-heading">{{ name }}</h1>
-            <div class="{{ @key }}-description-wrapper">
-                <div class="{{ @key }}-description">{{{ description }}}</div>
-            </div>
+          {{#if description }}
+              <div class="{{ @key }}-description-wrapper">
+                  <div class="{{ @key }}-description">{{{ description }}}</div>
+              </div>
+          {{/if}}
+            {{# if content }}
+                <div class="{{ @key }}-content-wrapper">
+                    {{#each content }}
+                        <div class="{{ @key }}-content">
+                            <img src="{{ image }}" alt="{{ name }}" title="{{ name }}" class="{{ @key }}-image">
+                            <h2 class="{{ @key }}-heading">{{ name }}</h2>
+                        </div>
+                    {{/each}}
+                </div>
+            {{/if}}
         </div>
     </div>
 {{/each}}
