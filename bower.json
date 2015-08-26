@@ -3,10 +3,16 @@
   "private": true,
   "dependencies": {
     "jquery": "~2.1.4",
-    "modernizr": "~2.8.3"
+    "modernizr": "~2.8.3",
+    "meyer-reset": "*"
   },
   "devDependencies": {
     "chai": "~3.2.0",
     "mocha": "~2.2.5"
+  },
+  "overrides": {
+    "meyer-reset": {
+      "main": "stylesheets/_meyer-reset.scss"
+    }
   }
 }
