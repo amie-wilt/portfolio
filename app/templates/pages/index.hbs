@@ -7,16 +7,18 @@
                   <div class="{{ @key }}-description">{{{ description }}}</div>
               </div>
           {{/if}}
-            {{# if content }}
-                <div class="{{ @key }}-content-wrapper">
-                    {{#each content }}
-                        <div class="{{ @key }}-content">
+          {{# if content }}
+              <div class="{{ @key }}-content-wrapper">
+                {{#each content }}
+                    <div class="{{ @key }}-content">
+                        <div class="image-wrapper">
                             <img src="{{ image }}" alt="{{ name }}" title="{{ name }}" class="{{ @key }}-image">
-                            <h2 class="{{ @key }}-heading">{{ name }}</h2>
                         </div>
-                    {{/each}}
-                </div>
-            {{/if}}
+                        <h2 class="{{ @key }}-heading">{{ name }}</h2>
+                    </div>
+                {{/each}}
+              </div>
+          {{/if}}
         </div>
     </div>
 {{/each}}
