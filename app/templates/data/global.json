@@ -9,7 +9,7 @@
     },
     "work": {
       "name": "Work",
-      "content": {
+      "examples": {
         "greer-dailey": {
           "image": "images/greer-dailey.jpg",
           "name": "Greer Dailey"
@@ -30,10 +30,17 @@
     },
     "contact": {
       "name": "Contact",
-      "content": {
-        "phone-number": "858.412.0343",
-        "email": "amie.wilt@gmail.com"
+      "info": {
+        "phone": {
+          "icon": "<a href=\"tel:+18584120343\" title=\"858.412.0343\"><i class=\"fa fa-phone-square fa-5x\"></i></a>",
+          "supporting-text": "858.412.0343"
+        },
+        "email": {
+          "icon": "<a href=\"mailto:amie.wilt@gmail.com\" title=\"amie.wilt@gmail.com\"><i class=\"fa fa-envelope fa-5x\"></i></a>",
+          "supporting-text": "amie.wilt@gmail.com"
+        }
       }
     }
   }
 }
+

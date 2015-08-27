@@ -7,3 +7,20 @@
   @include red-white-block-text;
   display: inline-block;
 }
+
+.contact-content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: $vertical-align-height;
+}
+
+.phone-icon a,
+.email-icon a {
+  color: $blue;
+}
+
+.phone,
+.email {
+  color: #fff;
+}

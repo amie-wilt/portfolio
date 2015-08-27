@@ -7,14 +7,24 @@
                   <div class="{{ @key }}-description">{{{ description }}}</div>
               </div>
           {{/if}}
-          {{# if content }}
+          {{# if examples }}
               <div class="{{ @key }}-content-wrapper">
-                {{#each content }}
+                {{#each examples }}
                     <div class="{{ @key }}-content">
                         <div class="image-wrapper">
                             <img src="{{ image }}" alt="{{ name }}" title="{{ name }}" class="{{ @key }}-image">
                         </div>
                         <h2 class="{{ @key }}-heading">{{ name }}</h2>
+                    </div>
+                {{/each}}
+              </div>
+          {{/if}}
+          {{#if info }}
+              <div class="{{ @key }}-content-wrapper">
+                {{#each info }}
+                    <div class="{{ @key }}-content">
+                        <div class="{{ @key }}-icon">{{{ icon }}}</div>
+                        <p class="{{ @key }}">{{ supporting-text }}</p>
                     </div>
                 {{/each}}
               </div>
