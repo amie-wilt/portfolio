@@ -20,14 +20,23 @@
 }
 
 .about-description {
+  //background-color: rgba(0, 0, 0, 0.5);
+  //padding: 50px;
+  //border-radius: 5px;
+
   p {
     text-align: center;
     max-width: 900px;
     color: #fff;
-    font-size: 1.5em;
+    font-size: 2em;
     line-height: 1.5;
-    font-weight: 100;
+    font-weight: 400;
     margin-left: auto;
     margin-bottom: 20px;
+
+    a {
+      color: $red;
+      font-weight: 700;
+    }
   }
 }

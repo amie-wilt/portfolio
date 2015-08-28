@@ -7,6 +7,7 @@
                   <div class="{{ @key }}-description">{{{ description }}}</div>
               </div>
           {{/if}}
+
           {{# if examples }}
               <div class="{{ @key }}-content-wrapper">
                 {{#each examples }}
@@ -20,17 +21,23 @@
               </div>
           {{/if}}
           {{#if info }}
-              <div class="{{ @key }}-content-wrapper">
-                {{#each info }}
-                    <div class="{{ @key }}-content">
-                        <div class="{{ @key }}-icon">{{{ icon }}}</div>
-                        <p class="{{ @key }}">{{ supporting-text }}</p>
-                    </div>
-                {{/each}}
-              </div>
+            {{#with info }}
+                <div class="{{ @key }}-content-wrapper">
+                  {{#if social-links }}
+                    {{#each social-links }}
+                        <div class="social-wrapper">
+                            <div class="{{ name }}-wrapper">
+                                <a href="{{ link }}" title="{{ name }}" class="{{ name }}">{{{ icon }}}</a>
+                            </div>
+                        </div>
+                    {{/each}}
+                  {{/if}}
+                </div>
+            {{/with}}
           {{/if}}
         </div>
     </div>
 {{/each}}
+
 
 

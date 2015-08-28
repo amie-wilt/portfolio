@@ -5,7 +5,7 @@
     },
     "about": {
       "name": "About",
-      "description": "<p>Hi. I'm Amie!<p><p>I began front end web development in January of 2014 when I was in search of a productive hobby. I fell in love with it and left my career as an exercise physiologist 5 months later. I spent that summer working on code before joining a digital marketing agency in August as an SEO Specialist. In December I moved to the development team. While I learned a lot and greatly enjoyed my time there, I decided I wanted to further my coding education. It was then that I was introduced to The Iron Yard.</p><p>After getting accepted into the Front End Engineering program, I was informed they did not have an instructor for the upcoming cohort, so I was offered their Ruby on Rails program. What? Ruby on Rails?</p><p> One door closes, one opens, right?</p><p>In May of this year, I began the 3-month intensive course for Ruby on Rails. I loved it, as I had no knowledge of the backend. As far as I was concerned, it was a black hole. Although I'm grateful for the education I received, I still have a love for the front end. Now I can call myself a front end developer, a full stack developer, and a rails developer.</p><p>Many thanks to my older brother, Dan, for introducing me to this world and continuing to be an amazing mentor, and to The Iron Yard, for giving me a broader prospective and endless support.</p>"
+      "description": "<p>Hi. I'm Amie!<p><p>I began in the web industry as a front end developer in January of 2014. I worked at a digital marketing agency and as a freelancer before attending The Iron Yard this past May for their Ruby on Rails program. Have a look around and feel free to <a href=\"#contact\">contact me</a> if you're looking for a developer and think I would be a good fit!</p>"
     },
     "work": {
       "name": "Work",
@@ -31,16 +31,38 @@
     "contact": {
       "name": "Contact",
       "info": {
-        "phone": {
-          "icon": "<a href=\"tel:+18584120343\" title=\"858.412.0343\"><i class=\"fa fa-phone-square fa-5x\"></i></a>",
-          "supporting-text": "858.412.0343"
-        },
-        "email": {
-          "icon": "<a href=\"mailto:amie.wilt@gmail.com\" title=\"amie.wilt@gmail.com\"><i class=\"fa fa-envelope fa-5x\"></i></a>",
-          "supporting-text": "amie.wilt@gmail.com"
-        }
+        "social-links": [
+          {
+            "name": "LinkedIn",
+            "link": "https://www.linkedin.com/in/amiewilt",
+            "icon": "<i class=\"fa fa-linkedin-square fa-x5\"></i>"
+          },
+          {
+            "name": "Github",
+            "link": "https://github.com/amie-wilt",
+            "icon": "<i class=\"fa fa-github-square fa-x5\"></i>"
+          },
+          {
+            "name": "Twitter",
+            "link": "https://twitter.com/amie_wilt",
+            "icon": "<i class=\"fa fa-twitter-square fa-x5\"></i>"
+          }
+        ]
+      },
+      "contact-links": {
+        "phone": [
+          {
+            "name": "Phone",
+            "supporting-text": "858.412.0343"
+          },
+          {
+            "name": "Email",
+            "supporting-text": "amie.wilt@gmail.com"
+          }
+        ]
       }
     }
   }
 }
+
 
