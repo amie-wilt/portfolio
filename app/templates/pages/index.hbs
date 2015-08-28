@@ -23,15 +23,24 @@
           {{#if info }}
             {{#with info }}
                 <div class="{{ @key }}-content-wrapper">
-                  {{#if social-links }}
-                    {{#each social-links }}
-                        <div class="social-wrapper">
-                            <div class="{{ name }}-wrapper">
-                                <a href="{{ link }}" title="{{ name }}" class="{{ name }}">{{{ icon }}}</a>
-                            </div>
-                        </div>
-                    {{/each}}
-                  {{/if}}
+                    <div class="social-links-wrapper">
+                        <h2 class="social-links-heading">Follow me on social networks</h2>
+                      {{#each social-links }}
+                          <div class="{{ name }}-wrapper">
+                              <a href="{{ link }}" title="{{ name }}" class="{{ name }}" target="_blank"><span class="icon">{{{ icon }}}</span></a>
+                              <p class="{{ name }}">{{ name }}</p>
+                          </div>
+                      {{/each}}
+                    </div>
+                    <div class="contact-links-wrapper">
+                        <h2 class="contact-links-heading">Contact me directly</h2>
+                      {{#each contact-links }}
+                          <div class="phone-email-wrapper">
+                              <a href="{{ link }}" title="Amie's {{ name }}"><span class="icon">{{{ icon }}}</span></a>
+                              <p class="{{ link }}">{{ name }}</p>
+                          </div>
+                      {{/each}}
+                    </div>
                 </div>
             {{/with}}
           {{/if}}

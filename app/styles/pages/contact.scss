@@ -10,17 +10,38 @@
 
 .contact-content-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: $vertical-align-height;
 }
 
-.phone-icon a,
-.email-icon a {
-  color: $blue;
+.social-links-wrapper,
+.contact-links-wrapper {
+  text-align: center;
+  padding: 100px;
+
 }
 
-.phone,
-.email {
+.social-links-heading,
+.contact-links-heading {
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.LinkedIn-wrapper,
+.Github-wrapper,
+.Twitter-wrapper,
+.phone-email-wrapper {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+.social-links-wrapper {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.icon {
   color: #fff;
 }

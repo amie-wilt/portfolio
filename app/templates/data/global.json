@@ -35,29 +35,29 @@
           {
             "name": "LinkedIn",
             "link": "https://www.linkedin.com/in/amiewilt",
-            "icon": "<i class=\"fa fa-linkedin-square fa-x5\"></i>"
+            "icon": "<i class=\"fa fa-linkedin fa-5x\"></i>"
           },
           {
             "name": "Github",
             "link": "https://github.com/amie-wilt",
-            "icon": "<i class=\"fa fa-github-square fa-x5\"></i>"
+            "icon": "<i class=\"fa fa-github fa-5x\"></i>"
           },
           {
             "name": "Twitter",
             "link": "https://twitter.com/amie_wilt",
-            "icon": "<i class=\"fa fa-twitter-square fa-x5\"></i>"
+            "icon": "<i class=\"fa fa-twitter fa-5x\"></i>"
           }
-        ]
-      },
-      "contact-links": {
-        "phone": [
+        ],
+        "contact-links": [
           {
-            "name": "Phone",
-            "supporting-text": "858.412.0343"
+            "name": "858.412.0343",
+            "link": "tel:+18584120343",
+            "icon": "<i class=\"fa fa-phone fa-5x\"></i>"
           },
           {
-            "name": "Email",
-            "supporting-text": "amie.wilt@gmail.com"
+            "name": "amie.wilt@gmail.com",
+            "link": "mailto:amie.wilt@gmail.com",
+            "icon": "<i class=\"fa fa-envelope fa-5x\"></i>"
           }
         ]
       }
