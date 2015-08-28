@@ -30,18 +30,40 @@
   margin-bottom: 50px;
 }
 
+.social-links-wrapper {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
 .LinkedIn-wrapper,
 .Github-wrapper,
 .Twitter-wrapper,
 .phone-email-wrapper {
   display: inline-block;
   padding: 0 40px;
+
+  a {
+    transition: 0.2s ease-out;
+    color: #fff;
+  }
 }
 
-.social-links-wrapper {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+.LinkedIn-wrapper a:hover {
+  color: rgb(0, 93, 165);
 }
 
-.icon {
+.Github-wrapper a:hover {
+  color: rgb(117, 39, 140);
+}
+
+.Twitter-wrapper a:hover {
+  color: rgb(66, 132, 237);
+}
+
+.phone-email-wrapper a:hover {
+  color: $red;
+}
+
+.phone-email-text {
   color: #fff;
+  margin-top: 20px;
 }

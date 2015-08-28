@@ -28,7 +28,6 @@
                       {{#each social-links }}
                           <div class="{{ name }}-wrapper">
                               <a href="{{ link }}" title="{{ name }}" class="{{ name }}" target="_blank"><span class="icon">{{{ icon }}}</span></a>
-                              <p class="{{ name }}">{{ name }}</p>
                           </div>
                       {{/each}}
                     </div>
@@ -37,7 +36,7 @@
                       {{#each contact-links }}
                           <div class="phone-email-wrapper">
                               <a href="{{ link }}" title="Amie's {{ name }}"><span class="icon">{{{ icon }}}</span></a>
-                              <p class="{{ link }}">{{ name }}</p>
+                              <p class="phone-email-text">{{ name }}</p>
                           </div>
                       {{/each}}
                     </div>
