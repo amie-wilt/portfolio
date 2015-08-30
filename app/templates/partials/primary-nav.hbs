@@ -2,8 +2,8 @@
     <ul class="primary-nav-list">
       {{#each global.pages }}
         {{#if name }}
-            <li>
-                <a href="#{{ @key }}">{{ name }}</a>
+            <li class="primary-nav-list-item">
+                <a href="#{{ @key }}" class="nav-link">{{ name }}</a>
             </li>
         {{/if}}
       {{/each}}

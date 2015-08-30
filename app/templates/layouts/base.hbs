@@ -30,6 +30,9 @@
 <![endif]-->
 
 <header class="header">
+    <div class="logo-container">
+        {{> logo }}
+    </div>
     <div class="header-primary-nav-container">
       {{> primary-nav }}
         <button class="mobile-menu-trigger">
@@ -47,9 +50,9 @@
 <!-- build:js(.) scripts/vendor.js -->
 <!-- bower:js -->
 <script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/gsap/src/uncompressed/TweenMax.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
-
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>

@@ -1,6 +1,10 @@
 .primary-nav-list {
   list-style: none;
   text-align: right;
+}
+
+.primary-nav-list-item {
+  position: relative;
 
   a {
     @include red-white-block-text;

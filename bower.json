@@ -2,9 +2,10 @@
   "name": "portfolio",
   "private": true,
   "dependencies": {
+    "gsap": "~1.17.0",
     "jquery": "~2.1.4",
-    "modernizr": "~2.8.3",
-    "meyer-reset": "*"
+    "meyer-reset": "*",
+    "modernizr": "~2.8.3"
   },
   "devDependencies": {
     "chai": "~3.2.0",
