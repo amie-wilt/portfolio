@@ -19,4 +19,10 @@
   text-transform: uppercase;
   display: inline-block;
   font-weight: 700;
+
+  @media #{$mobile-width-mq} {
+    font-size: 1.5em;
+    display: block;
+    text-align: center;
+  }
 }

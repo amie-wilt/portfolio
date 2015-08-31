@@ -28,6 +28,11 @@
     margin-left: auto;
     margin-bottom: 20px;
 
+    @media #{$mobile-width-mq} {
+      font-size: 1em;
+      margin: 0 20px;
+    }
+
     a {
       color: $red;
       font-weight: 700;

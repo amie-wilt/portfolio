@@ -22,6 +22,11 @@
   color: #fff;
   position: relative;
 
+  @media #{$mobile-width-mq} {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
   a {
     color: $red;
     font-weight: 600;

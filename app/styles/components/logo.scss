@@ -8,4 +8,11 @@
   position: relative;
   text-transform: uppercase;
   font-weight: 700;
+
+  @media #{$mobile-width-mq} {
+    display: block;
+    font-size: 2em;
+    padding-left: 0;
+    text-align: center;
+  }
 }
