@@ -64,3 +64,5 @@ $('.resume-link').on('click', function () {
 $('.fa-arrow-up').on('click', function () {
   TweenMax.to(window, 0.75, {scrollTo:{y:0}, ease:Expo.easeInOut});
 });
+
+TEST
