@@ -66,6 +66,27 @@ $('.resume-link').on('click', function () {
   })
 });
 
+$('.contact-link').on('click', function () {
+  TweenMax.from('.contact-secondary-heading', 0.5, {
+    opacity: 0,
+    scale: 1.25,
+    delay: 0.6,
+    ease: Back.easeInOut.config(0.5)
+  });
+
+  TweenMax.from('.icon', 0.5, {
+    opacity: 0,
+    rotation: -90,
+    delay: 1
+  });
+
+  TweenMax.from('.phone-email-text', 0.2, {
+    opacity: 0,
+    y: 30,
+    delay: 1.4
+  })
+});
+
 //Up arrow scroll to top
 $('.fa-arrow-up').on('click', function () {
   TweenMax.to(window, 0.75, {scrollTo:{y:0}, ease:Expo.easeInOut});
