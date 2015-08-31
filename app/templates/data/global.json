@@ -23,7 +23,7 @@
     },
     "resume": {
       "name": "Resume",
-      "description": "Please see my <a href=\"http://codepen.io/awilt/pen/JdKVyE\" target=\"_blank\">resume on Codepen</a>."
+      "description": "Please see my <a href=\"http://codepen.io/awilt/pen/JdKVyE\" target=\"_blank\" class=\"contact-link\">resume on Codepen</a>."
     },
     "contact": {
       "name": "Contact",
