@@ -27,7 +27,7 @@
             {{#with info }}
                 <div class="{{ @key }}-content-wrapper">
                     <div class="social-links-wrapper">
-                        <h2 class="social-links-heading">Follow me on social networks</h2>
+                        <h2 class="social-links-heading contact-secondary-heading">Follow me on social networks</h2>
                       {{#each social-links }}
                           <div class="{{ name }}-wrapper">
                               <a href="{{ link }}" title="{{ name }}" class="{{ name }}" target="_blank"><span
@@ -36,11 +36,11 @@
                       {{/each}}
                     </div>
                     <div class="contact-links-wrapper">
-                        <h2 class="contact-links-heading">Contact me directly</h2>
+                        <h2 class="contact-links-heading contact-secondary-heading">Contact me directly</h2>
                       {{#each contact-links }}
                           <div class="phone-email-wrapper">
                               <a href="{{ link }}" title="Amie's {{ name }}" class="phone-email-link">
-                                  <span class="icon">{{{ icon }}}</span>
+                                  <span>{{{ icon }}}</span>
 
                                   <p class="phone-email-text">{{ name }}</p>
                               </a>

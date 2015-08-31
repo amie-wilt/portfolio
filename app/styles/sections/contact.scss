@@ -28,6 +28,7 @@
   font-size: 3em;
   color: #fff;
   margin-bottom: 50px;
+  position: relative;
 }
 
 .social-links-wrapper {
@@ -47,8 +48,13 @@
   }
 }
 
+.icon {
+  position: relative;
+}
+
 .phone-email-text {
   margin-top: 20px;
+  position: relative;
 }
 
 .LinkedIn-wrapper a:hover {

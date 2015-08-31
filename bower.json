@@ -14,6 +14,12 @@
   "overrides": {
     "meyer-reset": {
       "main": "stylesheets/_meyer-reset.scss"
+    },
+    "gsap": {
+      "main": [
+        "src/minified/plugins/ScrollToPlugin.min.js",
+        "src/uncompressed/TweenMax.js"
+      ]
     }
   }
 }
