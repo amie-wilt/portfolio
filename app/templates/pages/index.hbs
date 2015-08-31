@@ -27,7 +27,8 @@
                         <h2 class="social-links-heading">Follow me on social networks</h2>
                       {{#each social-links }}
                           <div class="{{ name }}-wrapper">
-                              <a href="{{ link }}" title="{{ name }}" class="{{ name }}" target="_blank"><span class="icon">{{{ icon }}}</span></a>
+                              <a href="{{ link }}" title="{{ name }}" class="{{ name }}" target="_blank"><span
+                                      class="icon">{{{ icon }}}</span></a>
                           </div>
                       {{/each}}
                     </div>
@@ -35,8 +36,10 @@
                         <h2 class="contact-links-heading">Contact me directly</h2>
                       {{#each contact-links }}
                           <div class="phone-email-wrapper">
-                              <a href="{{ link }}" title="Amie's {{ name }}"><span class="icon">{{{ icon }}}</span></a>
-                              <p class="phone-email-text">{{ name }}</p>
+                              <a href="{{ link }}" title="Amie's {{ name }}" class="phone-email-link">
+                                  <span class="icon">{{{ icon }}}</span>
+                                  <p class="phone-email-text">{{ name }}</p>
+                              </a>
                           </div>
                       {{/each}}
                     </div>

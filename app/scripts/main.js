@@ -1,17 +1,5 @@
 // jshint devel:true
 
-$(document).ready(function () {
-  //Slide nav list items from primary nav in from the right or bottom on load
-
-  //Slide nav list banners on sections from left on scroll
-
-  //Smooth scroll and stop at each section
-
-  //$('.primary-nav-list-item').animate({ right: 0 });
-
-
-});
-
 function headingSlide(sectionHeading) {
   TweenMax.from(sectionHeading, 0.5, {
     left: '-100%',
@@ -43,12 +31,12 @@ $('.about-link').on('click', function () {
   });
 });
 
-//Project examples stagger scale
+//Project examples stagger
 $('.work-link').on('click', function () {
   TweenMax.staggerFrom('.work-example', 0.5, {
     scale: 0.5,
     opacity: 0,
-    delay: 0.3,
+    delay: 0.5,
     ease: Back.easeOut
   }, 0.2);
 });

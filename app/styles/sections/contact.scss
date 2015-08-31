@@ -47,6 +47,10 @@
   }
 }
 
+.phone-email-text {
+  margin-top: 20px;
+}
+
 .LinkedIn-wrapper a:hover {
   color: rgb(0, 93, 165);
 }
@@ -59,11 +63,6 @@
   color: rgb(66, 132, 237);
 }
 
-.phone-email-wrapper a:hover {
+.phone-email-link:hover {
   color: $red;
-}
-
-.phone-email-text {
-  color: #fff;
-  margin-top: 20px;
 }
