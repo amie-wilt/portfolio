@@ -25,10 +25,16 @@ $('[data-nav="link"]').on('click', function () {
   arrowFadeIn('.fa-arrow-up')
 });
 
+//Logo slide in from left
+TweenMax.from('.logo', 1, {
+  left: '-100%',
+  ease: Back.easeInOut.config(0.5)
+});
+
 //Nav stagger slide in from right
 TweenMax.staggerFrom('.primary-nav-list-item', 0.4, {
   right: '-100%',
-  delay: 0.2,
+  delay: 0.8,
   ease: Expo.easeInOut
 }, 0.1);
 
@@ -64,5 +70,3 @@ $('.resume-link').on('click', function () {
 $('.fa-arrow-up').on('click', function () {
   TweenMax.to(window, 0.75, {scrollTo:{y:0}, ease:Expo.easeInOut});
 });
-
-TEST
