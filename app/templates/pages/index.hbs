@@ -1,7 +1,7 @@
 {{#each global.pages }}
     <div class="{{ @key }}-section" id="{{ @key }}">
         <div class="{{ @key }}-wrapper">
-            <h1 class="{{ @key }}-heading">{{ name }}</h1>
+            <h1 class="{{ @key }}-heading section-heading">{{ name }}</h1>
           {{#if description }}
               <div class="{{ @key }}-description-wrapper">
                   <div class="{{ @key }}-description">{{{ description }}}</div>
@@ -11,7 +11,7 @@
           {{# if examples }}
               <div class="{{ @key }}-content-wrapper">
                 {{#each examples }}
-                    <div class="{{ @key }}-content">
+                    <div class="{{ @key }}-content work-example">
                         <div class="image-wrapper">
                             <img src="{{ image }}" alt="{{ name }}" title="{{ name }}" class="{{ @key }}-image">
                         </div>

@@ -1,6 +1,3 @@
-.about-section {
-}
-
 .about-wrapper {
   background-color: $light-grey;
   min-height: $section-height;
@@ -8,7 +5,7 @@
 
 .about-heading {
   @include red-white-block-text;
-  display: inline-block;
+  position: relative;
 }
 
 .about-description-wrapper {
@@ -19,15 +16,13 @@
 }
 
 .about-description {
-  //background-color: rgba(0, 0, 0, 0.5);
-  //padding: 50px;
-  //border-radius: 5px;
+  position: relative;
 
   p {
     text-align: center;
     max-width: 900px;
     color: #fff;
-    font-size: 2em;
+    font-size: 1.75em;
     line-height: 1.5;
     font-weight: 400;
     margin-left: auto;

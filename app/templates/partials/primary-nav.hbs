@@ -3,7 +3,7 @@
       {{#each global.pages }}
         {{#if name }}
             <li class="primary-nav-list-item">
-                <a href="#{{ @key }}" class="nav-link">{{ name }}</a>
+                <a href="#{{ @key }}" class="{{ @key }}-link" data-nav="link">{{ name }}</a>
             </li>
         {{/if}}
       {{/each}}

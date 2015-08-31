@@ -5,7 +5,7 @@
 
 .work-heading {
   @include red-white-block-text;
-  display: inline-block;
+  position: relative;
 }
 
 .work-content-wrapper {

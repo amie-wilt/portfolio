@@ -5,7 +5,7 @@
 
 .resume-heading {
   @include red-white-block-text;
-  display: inline-block;
+  position: relative;
 }
 
 .resume-description-wrapper {
@@ -18,8 +18,9 @@
 
 .resume-description {
   vertical-align: middle;
-  font-size: 5em;
+  font-size: 3em;
   color: #fff;
+  position: relative;
 
   a {
     color: $red;

@@ -5,7 +5,7 @@
 
 .contact-heading {
   @include red-white-block-text;
-  display: inline-block;
+  position: relative;
 }
 
 .contact-content-wrapper {
