@@ -1,7 +1,10 @@
 {{#each global.pages }}
     <div class="{{ @key }}-section" id="{{ @key }}">
         <div class="{{ @key }}-wrapper">
-            <h1 class="{{ @key }}-heading section-heading">{{ name }}</h1>
+            <div class="heading-arrow-container">
+                <h1 class="{{ @key }}-heading section-heading">{{ name }}</h1>
+                <i class="fa fa-arrow-up fa-2x"></i>
+            </div>
           {{#if description }}
               <div class="{{ @key }}-description-wrapper">
                   <div class="{{ @key }}-description">{{{ description }}}</div>
@@ -38,6 +41,7 @@
                           <div class="phone-email-wrapper">
                               <a href="{{ link }}" title="Amie's {{ name }}" class="phone-email-link">
                                   <span class="icon">{{{ icon }}}</span>
+
                                   <p class="phone-email-text">{{ name }}</p>
                               </a>
                           </div>

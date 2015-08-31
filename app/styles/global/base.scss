@@ -25,3 +25,20 @@ main {
   overflow: hidden;
 }
 
+.heading-arrow-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-arrow-up {
+  color: #888;
+  transition: 0.2s ease;
+  padding: 30px;
+  position: relative;
+
+  &:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+}

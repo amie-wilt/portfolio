@@ -1,7 +1,5 @@
 {
   "pages": {
-    "index": {
-    },
     "about": {
       "name": "About",
       "description": "<p>Hi. I'm Amie!<p><p>I began in the web industry as a front end developer in January of 2014. I worked at a digital marketing agency and as a freelancer before attending The Iron Yard this past May for their Ruby on Rails program. Have a look around and feel free to <a href=\"#contact\">contact me</a> if you're looking for a developer and think I would be a good fit!</p>"

@@ -8,18 +8,28 @@ function headingSlide(sectionHeading) {
   });
 }
 
+function arrowFadeIn(arrow) {
+  TweenMax.from(arrow, 1, {
+    opacity: 0,
+    scale: 0.5,
+    ease: Back.easeOut,
+    delay: 0.2
+  });
+}
+
 $('[data-nav="link"]').on('click', function () {
   var $this = $(this),
     href = $this.attr('href'); //
 
   headingSlide('.section-heading');
+  arrowFadeIn('.fa-arrow-up')
 });
 
 //Nav stagger slide in from right
 TweenMax.staggerFrom('.primary-nav-list-item', 0.4, {
   right: '-100%',
   delay: 0.2,
-  ease: Power2.easeInOut
+  ease: Expo.easeInOut
 }, 0.1);
 
 //About content slide up
@@ -48,4 +58,9 @@ $('.resume-link').on('click', function () {
     delay: 0.2,
     ease: Expo.easeInOut
   })
+});
+
+//Up arrow scroll to top
+$('.fa-arrow-up').on('click', function () {
+  TweenMax.to(window, 0.75, {scrollTo:{y:0}, ease:Expo.easeInOut});
 });
