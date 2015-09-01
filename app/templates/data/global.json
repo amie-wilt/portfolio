@@ -23,7 +23,7 @@
     },
     "resume": {
       "name": "Resume",
-      "description": "Please see my <a href=\"http://codepen.io/awilt/pen/JdKVyE\" target=\"_blank\" class=\"contact-link\">resume on Codepen</a>."
+      "description": "Please see my <a href=\"http://codepen.io/awilt/pen/JdKVyE\" target=\"_blank\" class=\"contact-link\">resume on Codepen</a> or in <a href=\"https://s3.amazonaws.com/amie-wilt-resume/AmieWiltResume.pdf\" target=\"_blank\">pdf format</a>."
     },
     "contact": {
       "name": "Contact",

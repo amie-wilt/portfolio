@@ -15,7 +15,7 @@ module.exports = function (grunt) {
 
   // Automatically load required grunt tasks
   require('jit-grunt')(grunt, {
-      useminPrepare: 'grunt-usemin'
+    useminPrepare: 'grunt-usemin'
   });
 
   grunt.loadNpmTasks('assemble');
@@ -172,7 +172,7 @@ module.exports = function (grunt) {
     // Compiles ES6 with Babel
     babel: {
       options: {
-          sourceMap: true
+        sourceMap: true
       },
       dist: {
         files: [{
@@ -246,7 +246,9 @@ module.exports = function (grunt) {
     wiredep: {
       app: {
         exclude: [
-          'bower_components/modernizr/modernizr.js'
+          'bower_components/modernizr/modernizr.js',
+          'bower_components/gsap/src/minified/plugins/ScrollToPlugin.min.js',
+          'bower_components/gsap/src/uncompressed/TweenMax.js'
         ],
         ignorePath: '../../',
         src: ['<%= config.templates %>/layouts/base.hbs']
@@ -259,13 +261,15 @@ module.exports = function (grunt) {
     // Renames files for browser caching purposes
     filerev: {
       dist: {
-        src: [
-          '<%= config.dist %>/scripts/{,*/}*.js',
-          '<%= config.dist %>/styles/{,*/}*.css',
-          '<%= config.dist %>/images/{,*/}*.*',
-          '<%= config.dist %>/styles/fonts/{,*/}*.*',
-          '<%= config.dist %>/*.{ico,png}'
-        ]
+        files: {
+          src: [
+            '<%= config.dist %>/scripts/{,*/}*.js',
+            '<%= config.dist %>/styles/{,*/}*.css',
+            '<%= config.dist %>/images/{,*/}*.*',
+            '<%= config.dist %>/styles/fonts/{,*/}*.*',
+            '<%= config.dist %>/*.{ico,png}'
+          ]
+        }
       }
     },
 
@@ -338,31 +342,42 @@ module.exports = function (grunt) {
       }
     },
 
-     //By default, your `index.html`'s <!-- Usemin block --> will take care
-     //of minification. These next options are pre-configured if you do not
-     //wish to use the Usemin blocks.
-     cssmin: {
-       dist: {
-         files: {
-           '<%= config.dist %>/styles/main.css': [
-             '.tmp/styles/{,*/}*.css',
-             '<%= config.app %>/styles/{,*/}*.css'
-           ]
-         }
-       }
-     },
-     uglify: {
-       dist: {
-         files: {
-           '<%= config.dist %>/scripts/main.js': [
-             '<%= config.app %>/scripts/main.js'
-           ]
-         }
-       }
-     },
-     concat: {
-       dist: {}
-     },
+    //By default, your `index.html`'s <!-- Usemin block --> will take care
+    //of minification. These next options are pre-configured if you do not
+    //wish to use the Usemin blocks.
+    cssmin: {
+      dist: {
+        files: {
+          '<%= config.dist %>/styles/main.css': [
+            '.tmp/styles/{,*/}*.css',
+            '<%= config.app %>/styles/{,*/}*.css'
+          ]
+        }
+      }
+    },
+    uglify: {
+      dist: {
+        files: {
+          '<%= config.dist %>/scripts/main.js': [
+            '<%= config.app %>/scripts/main.js'
+          ]
+        }
+      }
+    },
+    concat: {
+      dist: {
+        files: {
+          '<%= config.dist %>/scripts/main.js': [
+            '<%= config.app %>/scripts/main.js'
+          ],
+          '<%= config.dist %>/scripts/vendor.js': [
+            'bower_components/gsap/src/minified/plugins/ScrollToPlugin.min.js',
+            'bower_components/gsap/src/uncompressed/TweenMax.js',
+            'bower_components/jquery/dist/jquery.js'
+          ]
+        }
+      }
+    },
 
     // Copies remaining files to places other tasks can use
     copy: {
@@ -415,6 +430,36 @@ module.exports = function (grunt) {
         uglify: true
       }
     },
+
+    ////GSAP TweenMax
+    //gsap: {
+    //  dist: {
+    //    devFile: 'bower_components/gsap/src/uncompressed/TweenMax.js',
+    //    outputFile: '<%= config.dist %>/scripts/vendor/TweenMax.js',
+    //    files: {
+    //      src: [
+    //        '<%= config.dist %>/scripts/{,*/}*.js',
+    //        '!<%= config.dist %>/scripts/vendor/*'
+    //      ]
+    //    },
+    //    uglify: true
+    //  }
+    //},
+    //
+    ////GSAP ScrollToPlugin
+    //scrollToPlugin: {
+    //  dist: {
+    //    devFile: 'bower_components/gsap/src/minified/plugins/ScrollToPlugin.min.js',
+    //    outputFile: '<%= config.dist %>/scripts/vendor/ScrollToPlugin.min.js',
+    //    files: {
+    //      src: [
+    //        '<%= config.dist %>/scripts/{,*/}*.js',
+    //        '<%= config.dist %>/scripts/vendor/*'
+    //      ]
+    //    },
+    //    uglify: true
+    //  }
+    //},
 
     // Run some tasks in parallel to speed up build process
     concurrent: {
@@ -484,6 +529,8 @@ module.exports = function (grunt) {
     'uglify',
     'copy:dist',
     'modernizr',
+    //'gsap',
+    //'scrollToPlugin',
     //'filerev',
     'usemin',
     'htmlmin'
