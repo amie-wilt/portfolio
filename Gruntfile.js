@@ -368,7 +368,7 @@ module.exports = function (grunt) {
           '<%= config.dist %>/scripts/main.js': [
             '<%= config.app %>/scripts/main.js'
           ],
-          '<%= config.dist %>/scripts/vendor.js': [
+          '<%= config.dist %>/scripts/vendor/vendor.js': [
             'bower_components/gsap/src/minified/plugins/ScrollToPlugin.min.js',
             'bower_components/gsap/src/uncompressed/TweenMax.js',
             'bower_components/jquery/dist/jquery.js'
