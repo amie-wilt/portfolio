@@ -9,11 +9,12 @@
               <div class="{{ @key }}-description-wrapper">
                   <div class="{{ @key }}-description">{{{ description }}}</div>
                 {{#if languages }}
+                    <h2 class="languages-heading">Languages</h2>
                     <div class="language-wrapper">
                       {{#each languages }}
                           <ul class="languages-list">
                               <li>
-                                  <h2 class="language-name">{{ name }}</h2>
+                                  <h3 class="language-name">{{ name }}</h3>
                                   <ul class="library-list">
                                     {{#each libraries }}
                                         <li>{{ this }}</li>
@@ -25,11 +26,12 @@
                     </div>
                 {{/if}}
                 {{#if tools }}
+                    <h2 class="tools-heading">Tools</h2>
                     <div class="tool-wrapper">
                         {{#each tools }}
                           <ul class="tools-list">
                               <li>
-                                  <h2 class="tool-name">{{ type }}</h2>
+                                  <h3 class="tool-name">{{ type }}</h3>
                                   <ul class="secondary-tool-list">
                                       {{#each name }}
                                         <li>{{ this }}</li>

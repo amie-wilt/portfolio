@@ -1,5 +1,6 @@
 .header {
-  position: absolute;
-  width: 100%;
-  top: 10%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

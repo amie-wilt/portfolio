@@ -10,21 +10,23 @@
 
 .resume-description-wrapper {
   display: flex;
-  width: 100%;
+  flex-wrap:  wrap;
   height: $vertical-align-height;
   flex-direction: column;
-  justify-content: center
+  justify-content: center;
+  max-width: 75%;
+  margin: 0 auto;
 }
 
 .resume-description {
-  vertical-align: middle;
-  font-size: 2em;
+  font-size: 3rem;
   color: #fff;
   position: relative;
+  text-align: center;
+  margin-bottom: 50px;
 
   @media #{$mobile-width-mq} {
     font-size: 1.5em;
-    text-align: center;
   }
 
   a {
@@ -39,15 +41,26 @@
   display: flex;
   width: 100%;
   justify-content: space-around;
-  color: #fff;
+}
 
-  h2 {
-  }
+.languages-heading,
+.tools-heading {
+  text-align: center;
+  margin: 30px 0 30px 0;
+  font-size: 3rem;
 }
 
 .library-list,
 .secondary-tool-list {
+
   li {
     font-weight: 100;
+    margin-left: 15px;
   }
+}
+
+.language-name,
+.tool-name {
+  margin-bottom: 10px;
+  font-weight: 700;
 }

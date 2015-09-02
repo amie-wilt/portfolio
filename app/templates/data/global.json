@@ -29,7 +29,7 @@
     },
     "resume": {
       "name": "Resume",
-      "description": "Below are the languages and tools in which I have experience. For more information, please see my <a href=\"http://codepen.io/awilt/pen/JdKVyE\" target=\"_blank\" class=\"contact-link\">resume in Codepen</a> or in <a href=\"https://s3.amazonaws.com/amie-wilt-resume/AmieWiltResume.pdf\" target=\"_blank\">pdf format</a>.",
+      "description": "For more information on my education and experience, please see my <a href=\"http://codepen.io/awilt/pen/JdKVyE\" target=\"_blank\" class=\"contact-link\">resume in Codepen</a> or in <a href=\"https://s3.amazonaws.com/amie-wilt-resume/AmieWiltResume.pdf\" target=\"_blank\">pdf format</a>.",
       "languages": {
         "html": {
           "name": "HTML",
