@@ -9,21 +9,99 @@
       "examples": {
         "greer-dailey": {
           "image": "images/greer-dailey.jpg",
-          "name": "Greer Dailey"
+          "name": "Greer Dailey",
+          "link": "http://greerdailey.com/",
+          "description": "Greer Dailey is a responsive website I worked on as a freelance project. I wrote all of the HTML and CSS using Handlebars.js and Sass."
         },
         "shopper": {
           "image": "images/shopper.jpg",
-          "name": "Shopper"
+          "name": "Shopper",
+          "link": "https://savings-hopper.herokuapp.com/",
+          "description": "Shopper was my final project at The Iron Yard. I was responsible for the front end and wrote the HTML, CSS and some of the JavaScript. I used ERB and Sass."
         },
         "moomill": {
           "image": "images/moomill.jpg",
-          "name": "MooMill"
+          "name": "MooMill",
+          "link": "https://moomill.herokuapp.com/",
+          "description": "MooMill was a homework assignment for The Iron Yard and functionally is a clone of Twitter. I helped in both the front and back end of this project, using Ruby on Rails and Sass."
         }
       }
     },
     "resume": {
       "name": "Resume",
-      "description": "Please see my <a href=\"http://codepen.io/awilt/pen/JdKVyE\" target=\"_blank\" class=\"contact-link\">resume on Codepen</a> or in <a href=\"https://s3.amazonaws.com/amie-wilt-resume/AmieWiltResume.pdf\" target=\"_blank\">pdf format</a>."
+      "description": "Below are the languages and tools in which I have experience. For more information, please see my <a href=\"http://codepen.io/awilt/pen/JdKVyE\" target=\"_blank\" class=\"contact-link\">resume in Codepen</a> or in <a href=\"https://s3.amazonaws.com/amie-wilt-resume/AmieWiltResume.pdf\" target=\"_blank\">pdf format</a>.",
+      "languages": {
+        "html": {
+          "name": "HTML",
+          "libraries": [
+            "Slim",
+            "Jade",
+            "Haml"
+          ]
+        },
+        "css": {
+          "name": "CSS",
+          "libraries": [
+            "Sass/SCSS",
+            "LESS",
+            "Bootstrap",
+            "Foundation"
+          ]
+        },
+        "javascript": {
+          "name": "JavaScript",
+          "libraries": [
+            "jQuery",
+            "Handlbars",
+            "GSAP"
+          ]
+        },
+        "rails": {
+          "name": "Ruby on Rails",
+          "libraries": [
+            "Ruby",
+            "ERB"
+          ]
+        }
+      },
+      "tools": {
+        "source-control": {
+          "type": "Source Control",
+          "name": [
+            "Git",
+            "Github"
+          ]
+        },
+        "tasks": {
+          "type": "Tasks",
+          "name": [
+            "Yeoman",
+            "Bower",
+            "Grunt"
+          ]
+        },
+        "graphic-tools": {
+          "type": "Graphic Tools",
+          "name": [
+            "Adobe Photoshop",
+            "Adobe Fireworks"
+          ]
+        },
+        "deployment": {
+          "type": "Deployment",
+          "name": [
+            "Heroku",
+            "Beanstalk",
+            "AWS"
+          ]
+        },
+        "cms": {
+          "type": "CMS",
+          "name": [
+            "Wordpress"
+          ]
+        }
+      }
     },
     "contact": {
       "name": "Contact",
@@ -61,5 +139,3 @@
     }
   }
 }
-
-

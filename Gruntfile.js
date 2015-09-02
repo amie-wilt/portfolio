@@ -246,9 +246,7 @@ module.exports = function (grunt) {
     wiredep: {
       app: {
         exclude: [
-          'bower_components/modernizr/modernizr.js',
-          'bower_components/gsap/src/minified/plugins/ScrollToPlugin.min.js',
-          'bower_components/gsap/src/uncompressed/TweenMax.js'
+          'bower_components/modernizr/modernizr.js'
         ],
         ignorePath: '../../',
         src: ['<%= config.templates %>/layouts/base.hbs']

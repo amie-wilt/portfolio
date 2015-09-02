@@ -8,18 +8,51 @@
           {{#if description }}
               <div class="{{ @key }}-description-wrapper">
                   <div class="{{ @key }}-description">{{{ description }}}</div>
+                {{#if languages }}
+                    <div class="language-wrapper">
+                      {{#each languages }}
+                          <ul class="languages-list">
+                              <li>
+                                  <h2 class="language-name">{{ name }}</h2>
+                                  <ul class="library-list">
+                                    {{#each libraries }}
+                                        <li>{{ this }}</li>
+                                    {{/each}}
+                                  </ul>
+                              </li>
+                          </ul>
+                      {{/each}}
+                    </div>
+                {{/if}}
+                {{#if tools }}
+                    <div class="tool-wrapper">
+                        {{#each tools }}
+                          <ul class="tools-list">
+                              <li>
+                                  <h2 class="tool-name">{{ type }}</h2>
+                                  <ul class="secondary-tool-list">
+                                      {{#each name }}
+                                        <li>{{ this }}</li>
+                                      {{/each}}
+                                  </ul>
+                              </li>
+                          </ul>
+                        {{/each}}
+                    </div>
+                {{/if}}
               </div>
           {{/if}}
-
           {{# if examples }}
               <div class="{{ @key }}-content-wrapper">
                 {{#each examples }}
-                    <div class="{{ @key }}-content work-example">
-                        <div class="image-wrapper">
-                            <img src="{{ image }}" alt="{{ name }}" title="{{ name }}" class="{{ @key }}-image">
+                    <a href="{{ link }}" title="{{ name }}" target="_blank">
+                        <div class="{{ @key }}-content work-example">
+                            <div class="image-wrapper">
+                                <img src="{{ image }}" alt="{{ name }}" title="{{ name }}" class="{{ @key }}-image">
+                            </div>
+                            <h2 class="{{ @key }}-heading">{{ name }}</h2>
                         </div>
-                        <h2 class="{{ @key }}-heading">{{ name }}</h2>
-                    </div>
+                    </a>
                 {{/each}}
               </div>
           {{/if}}
@@ -41,6 +74,7 @@
                           <div class="phone-email-wrapper">
                               <a href="{{ link }}" title="Amie's {{ name }}" class="phone-email-link">
                                   <span>{{{ icon }}}</span>
+
                                   <p class="phone-email-text">{{ name }}</p>
                               </a>
                           </div>
