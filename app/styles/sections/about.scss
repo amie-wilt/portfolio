@@ -1,6 +1,5 @@
 .about-wrapper {
-  background-color: $light-grey;
-  min-height: $section-height;
+  @include light-grey-wrapper;
 }
 
 .about-heading {
@@ -9,10 +8,9 @@
 }
 
 .about-description-wrapper {
-  display: flex;
+  @include content-wrapper;
   justify-content: space-around;
   align-items: center;
-  height: $vertical-align-height;
 }
 
 .about-description {
@@ -29,7 +27,7 @@
 
     @media #{$mobile-width-mq} {
       font-size: 1.5rem;
-      margin: 0 20px;
+      margin: 20px;
     }
 
     a {

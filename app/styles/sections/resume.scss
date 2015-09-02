@@ -1,6 +1,5 @@
 .resume-wrapper {
-  min-height: $section-height;
-  background-color: $light-grey;
+  @include light-grey-wrapper;
 }
 
 .resume-heading {
@@ -9,10 +8,9 @@
 }
 
 .resume-description-wrapper {
-  display: flex;
-  flex-wrap:  wrap;
-  height: $vertical-align-height;
+  @include content-wrapper;
   flex-direction: column;
+  flex-wrap:  wrap;
   justify-content: center;
   max-width: 75%;
   margin: 0 auto;

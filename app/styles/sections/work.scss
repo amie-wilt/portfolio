@@ -1,6 +1,5 @@
 .work-wrapper {
-  min-height: $section-height;
-  background-color: $very-light-grey;
+  @include very-light-grey-wrapper;
 }
 
 .work-heading {
@@ -9,11 +8,10 @@
 }
 
 .work-content-wrapper {
-  display: flex;
+  @include content-wrapper;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  height: $vertical-align-height;
 }
 
 .greer-dailey-content,
@@ -25,6 +23,7 @@
 
   @media #{$mobile-width-mq} {
     padding: 20px;
+    margin: 10px 0;
   }
 }
 

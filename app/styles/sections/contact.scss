@@ -1,6 +1,5 @@
 .contact-wrapper {
-  min-height: $section-height;
-  background-color: $very-light-grey;
+  @include very-light-grey-wrapper;
 }
 
 .contact-heading {
@@ -9,11 +8,10 @@
 }
 
 .contact-content-wrapper {
-  display: flex;
+  @include content-wrapper;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: $vertical-align-height;
 }
 
 .social-links-wrapper,

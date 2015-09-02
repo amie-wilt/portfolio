@@ -17,7 +17,6 @@
   margin: 20px 0;
   font-size: 2em;
   text-transform: uppercase;
-  display: inline-block;
   font-weight: 700;
 
   @media #{$mobile-width-mq} {
@@ -25,4 +24,23 @@
     display: block;
     text-align: center;
   }
+}
+
+@mixin light-grey-wrapper {
+  min-height: $section-height;
+  background-color: $light-grey;
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin very-light-grey-wrapper {
+  min-height: $section-height;
+  background-color: $very-light-grey;
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin content-wrapper {
+  display: flex;
+  flex-grow: 1;
 }
