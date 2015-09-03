@@ -52,7 +52,7 @@
           "name": "JavaScript",
           "libraries": [
             "jQuery",
-            "Handlbars",
+            "Handlebars",
             "GSAP"
           ]
         },

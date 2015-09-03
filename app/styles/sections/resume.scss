@@ -10,14 +10,15 @@
 .resume-description-wrapper {
   @include content-wrapper;
   flex-direction: column;
-  flex-wrap:  wrap;
+  flex-wrap: wrap;
   justify-content: center;
   max-width: 75%;
   margin: 0 auto;
+  position: relative;
 }
 
 .resume-description {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #fff;
   position: relative;
   text-align: center;
@@ -39,21 +40,44 @@
   display: flex;
   width: 100%;
   justify-content: space-around;
+  flex-wrap: wrap;
+
+  @media #{$mobile-width-mq} {
+    justify-content: space-between;
+  }
+}
+
+.language-wrapper {
+  border-bottom: 1px solid $transparent-white;
+  padding-bottom: 50px;
 }
 
 .languages-heading,
 .tools-heading {
   text-align: center;
   margin: 30px 0 30px 0;
-  font-size: 3rem;
+  font-size: 2rem;
+  font-weight: 700;
 }
+
+.languages-list,
+.tools-list {
+  @media #{$mobile-width-mq} {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+
+  >li {
+    text-align: center;
+  }
+}
+
 
 .library-list,
 .secondary-tool-list {
-
   li {
     font-weight: 100;
-    margin-left: 15px;
+    line-height: 1.25
   }
 }
 

@@ -63,13 +63,14 @@
 
 //Resume description slide in from right
   $('.resume-link').on('click', function () {
-    TweenMax.from('.resume-description', 1, {
+    TweenMax.from('.resume-description-wrapper', 1, {
       right: '-100%',
       delay: 0.2,
       ease: Expo.easeInOut
     })
   });
 
+//Contact section animations
   $('.contact-link').on('click', function () {
     TweenMax.from('.contact-secondary-heading', 0.5, {
       opacity: 0,
