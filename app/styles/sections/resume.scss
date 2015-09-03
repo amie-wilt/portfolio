@@ -26,6 +26,7 @@
 
   @media #{$mobile-width-mq} {
     font-size: 1.5em;
+    margin: 20px;
   }
 
   a {
@@ -41,15 +42,16 @@
   width: 100%;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding-bottom: 50px;
 
   @media #{$mobile-width-mq} {
     justify-content: space-between;
+    padding-bottom: 30px;
   }
 }
 
 .language-wrapper {
   border-bottom: 1px solid $transparent-white;
-  padding-bottom: 50px;
 }
 
 .languages-heading,
