@@ -2,7 +2,7 @@
   "pages": {
     "about": {
       "name": "About",
-      "description": "<p>Hi. I'm Amie!<p><p>After getting a Masters in Clinical Exercise Physiology, I started a career working with cardiologists. By day I administered stress tests in a cardiac facility and I learned to code at night. I fell in love with coding and switched paths to become a front end web developer. I started with freelancing, got a job at a digital marketing agency, and in May, enrolled in the Ruby on Rails Engineering program at The Iron Yard. While I enjoyed learning about server side technology, my heart still lies in the front end.</p>"
+      "description": "<p>Hi. I'm Amie!<p><p>After getting a Masters in Clinical Exercise Physiology, I began a career in the medical field. By day I administered stress tests in a cardiology facility and I learned to code at night. I fell in love with coding and switched paths to become a front end web developer. I started with freelancing, got a job at a digital marketing agency, and in May, enrolled in the Ruby on Rails Engineering program at The Iron Yard. While I enjoyed learning about server side technology, my heart still lies in the front end.</p>"
     },
     "work": {
       "name": "Work",
